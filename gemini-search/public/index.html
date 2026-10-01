@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gemini Search Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Ask Gemini</h1>
+    <div id="chat" class="chat" role="log"></div>
+    <form id="search-form" class="search-form">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search anything... (e.g. what's 42 * 7?)"
+        autocomplete="off"
+        autofocus
+      />
+      <button type="submit">Search</button>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

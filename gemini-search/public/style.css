@@ -1,0 +1,106 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f7;
+}
+
+.app {
+  width: 100%;
+  max-width: 680px;
+  padding: 24px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.chat {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.message {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #0b84ff;
+  color: #fff;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background: #fff;
+  border: 1px solid #e0e0e5;
+  color: #1c1c1e;
+}
+
+.message.tool {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px dashed #b9b9c0;
+  color: #5b5b63;
+  font-size: 0.8rem;
+}
+
+.message.error {
+  align-self: flex-start;
+  background: #ffe5e5;
+  color: #a40000;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+#search-input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d0d6;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #0b84ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #1c1c1e; }
+  .message.assistant { background: #2c2c2e; border-color: #3a3a3c; color: #f2f2f2; }
+  #search-input { background: #2c2c2e; border-color: #3a3a3c; color: #f2f2f2; }
+}

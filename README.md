@@ -217,6 +217,12 @@ interact with the local filesystem.
 - [Local File Trigger](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.localfiletrigger/)
 - [Execute Command](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executecommand/)
 
+## 🔎 Gemini search chat
+
+A standalone search bar with a chat-like experience backed by the Google
+Gemini API, demonstrating simple tool (function) calling. See
+[`gemini-search/README.md`](gemini-search/README.md) for setup.
+
 ## 📜 License
 
 This project is licensed under the Apache License 2.0 - see the
